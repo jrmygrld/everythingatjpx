@@ -1,0 +1,218 @@
+/*==== FONTS AND TYPOGRAPHY ====*/
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+/*==== BASE ====*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+/*==== LAYOUT ====*/
+/*==== HEADER ====*/
+
+.wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-135deg,blue, red);
+    clip-path: circle(25px at calc(100% - 45px) 45px);
+    transition: all 0.3s ease-in-out;
+}
+#active:checked ~ .wrapper{
+    clip-path: circle(75%);
+}
+
+.menu-btn{
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top: 20px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    background: linear-gradient(-135deg, blue, red);
+    transition: all 0.3s ease-in-out;
+}
+
+#active:checked ~ .menu-btn{
+    background: #fff;
+    color: #4158d0;
+}
+  
+#active:checked ~ .menu-btn i:before{
+    content: "\f00d";
+}
+  
+.wrapper ul{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+  
+.wrapper ul li{
+    margin: 15px 0;
+}
+  
+.wrapper ul li a{
+    color: none;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 5px 30px;
+    color: #fff;
+    position: relative;
+    line-height: 50px;
+    transition: all 0.3s ease;
+}
+  
+
+  
+.wrapper ul li a:hover:after{
+    transform: scaleY(1);
+}
+  
+.wrapper ul li a:hover{
+    font-weight: bold;
+}
+  
+input[type="checkbox"]{
+    display: none;
+}
+
+/* === BANNER IMAGE ===*/
+.home-header
+{
+    background-image: url(IMG_1970_2.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-top: 10px;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    25% {
+        background-image: url(IMG_1974.JPG);
+    }
+    50% {
+        background-image: url(IMG_1977.JPG);
+    }
+    75% {
+        background-image: url(IMG_1991.JPG);
+    }
+    100% {
+        background-image: url(/sIMG_1969.JPG);
+    }
+}
+.banner-text
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    color: #fff;
+    padding-left: 4%;
+    padding-top: 220px;
+    padding-bottom: 220px;
+}
+.banner-text .btn-primary
+{
+    background-image: linear-gradient(to right, blue,#be43f1);
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 12px;
+    padding: 15px 30px;
+    margin-top: 10px;
+}
+
+.banner-text h4{
+    font-size: 40%;
+}
+
+.banner-text h2{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.banner-text p{
+    font-size: 40%;
+}
+
+.banner-text a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner-text a:hover {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.banner-logo {
+    top: 20px;
+    left: 20px;
+}
+
+.banner-logo img{
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 20%;
+    max-width: 20vh;
+}
+
+
+/* === PROFILE ===*/
+.profile {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.education {
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.skills{
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+/*==== FOOTER ====*/
+
+
+.bottom-container {
+    background-color: lightgray;
+    padding: 20px 0 10px;
+    text-align: center;
+}
+
+.bottom-container img {
+    width: 20%;
+    max-width: 20vh;
+}
+
+.bottom-container a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.bottom-container a:hover{
+    text-decoration: none;
+    color: gray;
+    margin-bottom: 5px;
+}
